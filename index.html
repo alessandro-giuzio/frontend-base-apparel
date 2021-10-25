@@ -13,6 +13,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/33624adceb.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -22,7 +23,7 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper flow-content">
       <div class="nav">
         <img src="./images/logo.svg" alt="">
       </div>
@@ -41,11 +42,19 @@
         Add your email below to stay up-to-date with announcements and our
         launch deals.
       </p>
-     <div class="container-button">
-      <button class="btn">Email Address</button></div>
+
+      <form>
+
+        <div class="form__field">
+          <input type="email" class="form__input" pattern=".{@}" required>
+
+          <span class="icon"><i class="fas fa-chevron-right fa-2x"></i></span>
+        </div>
+
+      </form>
 
 
-    <footer>
+      <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
