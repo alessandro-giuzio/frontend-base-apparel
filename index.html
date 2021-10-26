@@ -44,13 +44,13 @@
       </p>
 
       <form>
-
+        <input id="image" class="dd"  type="image" src="./images/icon-error.svg" alt="">
         <div class="form__field">
-          <input type="email" class="form__input" pattern=".{@}" required>
+        <input id="email" type="email" class="form__input" pattern=".{@}" required>
+         <button><span class="icon"><i id="fas" class="fas fa-chevron-right fa-2x active"></i></span></button>
 
-          <button><span class="icon"><i class="fas fa-chevron-right fa-2x"></i></span></button>
         </div>
-
+        <p id="red" class="red">Please provide a valid email</p>
       </form>
 
 
@@ -65,5 +65,6 @@
         >.
       </p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

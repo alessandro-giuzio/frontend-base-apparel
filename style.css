@@ -140,10 +140,6 @@ button {
   color: hsl(228, 45%, 44%);
 }
 
-/* form {
-  display: flex;
-} */
-
 .icon {
   background-color: var(--clr-Desaturated-Red);
   color: #fff;
@@ -175,17 +171,24 @@ input {
 }
 
 .form__input:valid {
-  transform: scale(1.2);
+  border-color: forestgreen;
 }
 
-/* .form__input:valid + .icon::after {
+/*  .form__input:valid + .icon::after {
   content: "<i class=" fas fa-chevron-right "></i>";
-}
+} */
 
-.form__input:invalid {
+/* .form__input:invalid {
   border-color: firebrick;
 }
 
 .form__input:invalid + .icon::after {
-  content: "😳";
-}  */
+  content: '😳';
+}
+ */
+
+.dd {
+  position: relative;
+  bottom: -3.5rem;
+  z-index: 1;
+}
