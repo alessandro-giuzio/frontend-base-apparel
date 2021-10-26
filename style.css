@@ -10,7 +10,7 @@
   - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
   - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
 
-  --ff-primary: "Josefin Sans", sans-serif;
+  --ff-primary: 'Josefin Sans', sans-serif;
 
   --fs-: 1rem;
 
@@ -88,16 +88,15 @@ body {
   background-image: url(./images/bg-pattern-desktop.svg);
 }
 
-.btn {
+button {
   display: inline-block;
   text-decoration: none;
-  letter-spacing: 0.1rem;
-  font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: inherit;
-  /* padding: 0.75em 1.5em; */
+  cursor: pointer;
   background-color: inherit;
 }
+
 /* general layout */
 
 .flow-content > * + * {
@@ -141,12 +140,20 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+/* form {
+  display: flex;
+} */
+
 .icon {
   background-color: var(--clr-Desaturated-Red);
   color: #fff;
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 1.7rem;
   border-radius: 25px;
   background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-40%);
 }
 
 input {
@@ -156,13 +163,7 @@ input {
 
 .form__field {
   position: relative;
-}
-
-.form__field .icon {
-  position: absolute;
-  right: 0.5em;
-  top: 50%;
-  transform: translateY(-50%);
+  overflow: hidden;
 }
 
 .form__input {
@@ -173,11 +174,11 @@ input {
   padding: 0.5em 4em 0.5em 2em;
 }
 
-/* .form__input:valid {
-  border-color: forestgreen;
+.form__input:valid {
+  transform: scale(1.2);
 }
 
-.form__input:valid + .icon::after {
+/* .form__input:valid + .icon::after {
   content: "<i class=" fas fa-chevron-right "></i>";
 }
 
@@ -187,4 +188,4 @@ input {
 
 .form__input:invalid + .icon::after {
   content: "😳";
-} */
+}  */
