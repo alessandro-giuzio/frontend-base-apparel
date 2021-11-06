@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/frontend-mentor-base-apparel-coming-soon-page-solution-CyoPrkhkb)
-- Live Site URL: [Add live site URL here](https://base-apparel-frontend.netlify.app/)
+- Solution URL: [(https://www.frontendmentor.io/solutions/frontend-mentor-base-apparel-coming-soon-page-solution-CyoPrkhkb)]
+- Live Site URL: [(https://base-apparel-frontend.netlify.app/)]
 
 ### Built with
 
