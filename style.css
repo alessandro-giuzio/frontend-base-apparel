@@ -110,12 +110,12 @@ body {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     grid-template-areas:
       'logo hero'
       'hero-text .'
-      'text .'
-      'form .';
+      'form .'
+      'footer footer';
     margin: 0;
     gap: 0;
     width: 100%;
@@ -145,11 +145,12 @@ body {
     grid-area: hero-text;
   }
 
-  .text {
-    grid-area: text;
-  }
   .form {
     grid-area: form;
+  }
+
+  .footer {
+    grid-area: footer;
   }
 }
 
