@@ -76,6 +76,9 @@ img {
   font-weight: 400;
 }
 
+.desktop {
+  display: none;
+}
 /* general styling */
 
 body {
@@ -106,31 +109,47 @@ body {
 @media (min-width: 40rem) {
   .wrapper {
     display: grid;
-
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'logo hero'
+      'hero-text .'
+      'text .'
+      'form .';
+    margin: 0;
+    gap: 0;
     width: 100%;
     height: 100vh;
-    background-attachment: fixed;
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   }
 
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   .logo {
-    width: 10rem;
-    margin: 2rem 0 2rem 8vw;
+    grid-area: logo;
+    /* width: 10rem;
+    margin: 2rem 0 2rem 8vw; */
   }
 
   .hero {
-    grid-column-start: 2;
+    grid-area: hero;
   }
 
   .hero-text {
-    grid-column-start: 1;
+    grid-area: hero-text;
   }
 
   .text {
-    grid-column-start: 1;
+    grid-area: text;
   }
   .form {
-    grid-column-start: 1;
+    grid-area: form;
   }
 }
 
